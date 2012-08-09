@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>每天学习一点jquery——jquery-1.7.2</title>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.jRadioImage.js"></script>
+<style type="text/css">
+*{margin:0;padding:0;}
+
+label{ position:relative; zoom:1; float:left;}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+<form action="test.php" method="get" id="f">
+	<label><input type="radio" name="test" value="1" data-imgSrc="images/bird.jpg"  /></label>
+	<label><input type="radio" name="test" value="2" data-imgSrc="images/bird2.jpg" /></label>
+	<label><input type="radio" name="test" value="3" data-imgSrc="images/fish.jpg" /></label>
+	<input type="submit" />
+</form>
+
+
+
+
+<script type="text/javascript">
+	
+	$(function(){
+		//alert($.fn.jRadioImage);
+	
+		  $('#f').jRadioImage();
+	});
+	
+</script>
+</html>
